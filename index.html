@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href = "style.css">
+  </head>
+  <body>
+    <div class = "form-builder-main">
+      <div class = "form-builder-inner">
+        <h2 class = "form-builder-heading">
+          Form Builder
+        </h2>
+        <h4 class = "field-type-heading">
+          Select Field Type
+        </h4>
+        <select class = "menuSelector" id = "menuSelector-id">
+          <option value = "Text-Input">Text Input</option>
+          <option value = "Radio">Radio</option>
+          <option value = "Check-Box">Check Box</option> 
+        </select>
+        <h4 class = "field-label-heading">
+          Field Label
+        </h4>
+        <input id = "inp" class = "input-box" type = "text" placeholder = "Enter Field Label">
+      </div>
+      <button onclick = "addForm()" class = "add-field-button">Add Field</button>
+    </div>
+    <div class = "form-preview">
+      <h2 class = "form-preview-heading">Form Preview</h2>
+      <div id = "new-label-div"></div>
+    </div>
+    <script src = "script.js"></script>
+  </body>
+</html>
